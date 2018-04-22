@@ -1,0 +1,16 @@
+{
+  // These are all my auto-save configs
+  "editor.formatOnSave": true,
+  // turn it off for JS
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "prettier.disableLanguages": ["js"],
+  // show snippets before any other auto completion
+  "editor.snippetSuggestions": "top",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  }
+}
