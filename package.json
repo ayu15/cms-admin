@@ -2,6 +2,7 @@
   "name": "admin-dash",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ayu15.github.io/cms-admin/",
   "dependencies": {
     "@material-ui/icons": "^1.0.0-beta.42",
     "material-ui": "^1.0.0-beta.42",
@@ -14,12 +15,15 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
+    "gh-pages": "^1.1.0",
     "prettier": "^1.12.1",
     "stylelint": "^9.2.0",
     "stylelint-config-standard": "^18.2.0"
