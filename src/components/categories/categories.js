@@ -8,6 +8,7 @@ import List, {
 } from 'material-ui/List';
 import Checkbox from 'material-ui/Checkbox';
 import Avatar from 'material-ui/Avatar';
+import CategoriesData from './categories.json';
 
 const styles = theme => ({
   root: {
@@ -44,19 +45,23 @@ class Categories extends React.Component {
     return (
       <div className={classes.root}>
         <List>
-          {[0, 1, 2, 3].map(value => (
-            <ListItem key={value} dense button className={classes.listItem}>
+          {CategoriesData.map(value => (
+            <ListItem
+              key={value.id}
+              dense
+              button
+              className={classes.listItem}
+              onClick={this.handleToggle(value.id)}
+            >
               <Avatar
                 alt="List item"
                 src="https://dummyimage.com/120/445511/"
               />
-              <ListItemText primary={`Line item ${value + 1}`} />
-              <ListItemSecondaryAction>
-                <Checkbox
-                  onChange={this.handleToggle(value)}
-                  checked={this.state.checked.indexOf(value) !== -1}
-                />
-              </ListItemSecondaryAction>
+              <ListItemText primary={value.name} />
+              <Checkbox
+                onChange={this.handleToggle(value.id)}
+                checked={this.state.checked.indexOf(value.id) !== -1}
+              />
             </ListItem>
           ))}
         </List>

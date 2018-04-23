@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Bollywood"
+    },
+    {
+        "id": 2,
+        "name": "Hollywood"
+    },
+    {
+        "id": 3,
+        "name": "Latest"
+    },
+    {
+        "id": 4,
+        "name": "Old"
+    }
+]
