@@ -12,5 +12,6 @@
   "editor.snippetSuggestions": "top",
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
-  }
+  },
+  "git.ignoreLimitWarning": true
 }
